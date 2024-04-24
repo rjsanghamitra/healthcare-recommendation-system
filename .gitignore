@@ -1,0 +1,5 @@
+.vscode
+*.csv
+ms-toolsai.jupyter-keymap-1.1.2.vsix
+model
+/node_modules

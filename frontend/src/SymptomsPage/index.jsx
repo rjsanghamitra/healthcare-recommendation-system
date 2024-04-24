@@ -1,4 +1,5 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
+import {Navigate} from 'react-router-dom'
 import Checkbox from '@mui/material/Checkbox';
 import { Box, FormControlLabel, FormGroup, Typography, useMediaQuery, Button } from "@mui/material";
 import axios from 'axios'
@@ -27,6 +28,7 @@ const SymptomPage = () => {
             const response = await axiosInstance.post(apiUrl, {
                 selectedSymptoms,
             });
+            <Navigate to='/result' />
         } catch (error) {
             console.error("failed to send the data: ", error);
         }
